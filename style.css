@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shadows+Into+Light&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+html {
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color:  #393939;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: white;
+}
+
+
+/* list style */
+
+.list {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+li {
+    list-style-type: none;
+    margin: 1em auto;     
+    height: 2em;
+    width: 60%;
+    
+}
+
+li::before {
+    content: '';
+    display: block;
+    height: 1px;
+    border-top: 1px solid #FF5A09;
+    width: 80%;
+    margin: 5px auto;
+}
+
+ul {
+    padding: 0;
+    margin: 0 auto;
+}
+
+li span {
+    float: left;
+    font-size: 20px;
+    width: 250px;
+    margin: 0 auto;
+    color: white;
+}
+
+li button{
+    float: right;
+    height: 2.5em;
+    width: auto;
+    cursor: pointer;
+}
+
+/* list buttons */
+
+.up, .down {
+    margin: auto 3px;
+    font-size: 11px;
+    font-weight: bold;
+    background-color:#be4f0c;
+    border: #be4f0c;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.down {
+    box-shadow:inset 0px -50px 0px 0px #cd601c;
+}
+
+.down:hover {
+    transition: box-shadow 0.8s ease;
+    box-shadow:inset 0px 0px 0px 0px #cd8356;
+}
+
+.up {
+    box-shadow:inset 0px 50px 0px 0px #cd601c;
+}
+
+.up:hover {
+    transition: box-shadow 0.8s ease;
+    box-shadow:inset 0px 0px 0px 0px #cd8356;
+}
+
+.delete {
+    color: #be4f0c;
+    
+    
+}
+
+
+/* .liDiv:after {
+    content: '';
+    clear: both;
+    display: table;
+} */
+
+/* before each list */
+
+.notchecked::before {
+    display: inline-block;
+    content: '';
+    border-radius: 0.375rem;
+    height: 0.75rem;
+    width: 0.75rem;
+    background-color: #FF5A09;
+    float: left;
+    margin: 6px 10px;
+    transition: 0.5s ease;
+}
+
+.checked::before {
+    content: '';
+    display: inline-block;
+    margin-right: 0.8em;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 5px;
+    height: 11px;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: #FF5A09;
+    transform-origin: bottom left;
+    transform: rotate(45deg);
+    float: left;
+    transition: all 0.5s ease-in-out;
+}
+
+.checked  {
+    text-decoration: line-through #FF5A09;
+    color: rgb(203, 199, 199);
+    font-style: italic;
+    transition: text-decoration 0.5s ease, font-style 1s ease;
+}
