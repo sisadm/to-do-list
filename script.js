@@ -1,4 +1,3 @@
-const showList = document.getElementById('show');
 const listDiv = document.querySelector('.list');
 const listUl = document.querySelector('ul');
 const addItemInput = document.querySelector('input.addItemInput');
@@ -8,16 +7,6 @@ const listItem = document.getElementsByTagName('li');
 
 
 
-// hide & show list 
-showList.addEventListener('click', () => {
-    if(listDiv.style.display == "none") {
-        showList.textContent = "Hide list";
-        listDiv.style.display = "block";
-    } else {
-        listDiv.style.display = "none";
-        showList.textContent = "Show list";
-    }
-})
 
 // add item
 addItemButton.addEventListener('click', () => {
