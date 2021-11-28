@@ -30,6 +30,7 @@ addItemButton.addEventListener('click', () => {
 listUl.addEventListener('click', (event) => {
     if(event.target.tagName == 'BUTTON') {  // target the buttons 
         if(event.target.className == 'delete') {  // target the button with delete class
+            
             let li = event.target.parentNode;
             let ul = li.parentNode;
             ul.removeChild(li);
