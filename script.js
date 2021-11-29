@@ -13,10 +13,12 @@ addItemButton.addEventListener('click', () => {
     let ul = document.getElementsByTagName('ul')[0];
     let li = document.createElement('li');
     if (addItemInput.value != "") {
-        li.innerHTML = `  <span class="liDiv notchecked">${addItemInput.value}</span> 
-        <button class="delete">Delete</button> 
-        <button class="up">&and;</button>
-        <button class="down">&or;</button>`;
+        li.innerHTML = `
+            <span class="liDiv notchecked">${addItemInput.value}</span> 
+            <button class="delete">Delete</button> 
+            <button class="up">&and;</button>
+            <button class="down">&or;</button>
+        `;
         ul.appendChild(li);
         addItemInput.value = '';
     } else {
