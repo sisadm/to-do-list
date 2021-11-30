@@ -24,6 +24,7 @@ addItemButton.addEventListener('click', () => {
     } else {
         alert("Please fill the input if you want to add something to list!");
     };
+    
 })
 
 
