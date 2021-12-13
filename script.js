@@ -31,6 +31,12 @@ function addElement(value) {
     ul.appendChild(li);
 }
 
+// function to check LocalStorage
+
+function checkLocalS() {
+    
+}
+
 
 // add item
 addItemButton.addEventListener('click', () => {
