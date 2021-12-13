@@ -19,7 +19,7 @@ function hide() {
 
 // add item
 addItemButton.addEventListener('click', () => {
-    if(hideLiElements[0].style.display != 'none') {
+    if(hideLiElements[0].style.display != 'none' || !hideLiElements[4]) {
         hide();
     }
     let ul = document.getElementsByTagName('ul')[0];
