@@ -2,6 +2,7 @@ const listDiv = document.querySelector('.list');
 const listUl = document.querySelector('ul');
 const addItemInput = document.querySelector('input.addItemInput');
 const addItemButton = document.querySelector('button.addItemButton');
+const saveButton = document.querySelector('.saveButton');
 const listItem = document.getElementsByTagName('li');
 
 
