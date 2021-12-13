@@ -34,12 +34,13 @@ function addElement(value) {
 
 // add item
 addItemButton.addEventListener('click', () => {
+
+    let = inputValue = addItemInput.value;
+
     
     if(hideLiElements[0].style.display != 'none' || !hideLiElements[0]) {
         hide();
     }
-
-    let = inputValue = addItemInput.value;
 
     if (inputValue != "") {
         
