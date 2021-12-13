@@ -16,23 +16,36 @@ function hide() {
     }
 }
 
+// function add Li to Ul
+
+function addElement(value) {
+    
+    let ul = document.getElementsByTagName('ul')[0];
+    let li = document.createElement('li');
+    li.innerHTML = `
+        <span class="liDiv notchecked">${value}</span> 
+        <button class="delete">Delete</button> 
+        <button class="up">&and;</button>
+        <button class="down">&or;</button>
+        `;
+    ul.appendChild(li);
+}
+
 
 // add item
 addItemButton.addEventListener('click', () => {
-    if(hideLiElements[0].style.display != 'none' || !hideLiElements[4]) {
+    
+    if(hideLiElements[0].style.display != 'none' || !hideLiElements[0]) {
         hide();
     }
-    let ul = document.getElementsByTagName('ul')[0];
-    let li = document.createElement('li');
-    if (addItemInput.value != "") {
-        li.innerHTML = `
-            <span class="liDiv notchecked">${addItemInput.value}</span> 
-            <button class="delete">Delete</button> 
-            <button class="up">&and;</button>
-            <button class="down">&or;</button>
-        `;
-        ul.appendChild(li);
+
+    let = inputValue = addItemInput.value;
+
+    if (inputValue != "") {
+        
+        addElement(inputValue);
         addItemInput.value = '';
+
     } else {
         alert("Please fill the input if you want to add something to list!");
     };
