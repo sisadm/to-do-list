@@ -4,7 +4,7 @@ const addItemInput = document.querySelector('input.addItemInput');
 const addItemButton = document.querySelector('button.addItemButton');
 const saveButton = document.querySelector('.saveButton');
 const listItem = document.getElementsByTagName('li');
-
+const hideLiElements = document.querySelectorAll('.hide');
 
 
 
@@ -30,6 +30,9 @@ addItemButton.addEventListener('click', () => {
 
 // save button 
 
+saveButton.addEventListener('click', () => {
+
+});
 
 
 
