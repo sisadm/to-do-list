@@ -8,9 +8,20 @@ const hideLiElements = document.querySelectorAll('.hide');
 
 
 
+// function to hide .hide class LI
+
+function hide() {
+    for(let i = 0; i < hideLiElements.length; i++){
+        hideLiElements[i].style.display = 'none';
+    }
+}
+
 
 // add item
 addItemButton.addEventListener('click', () => {
+    if(hideLiElements[0].style.display != 'none') {
+        hide();
+    }
     let ul = document.getElementsByTagName('ul')[0];
     let li = document.createElement('li');
     if (addItemInput.value != "") {
