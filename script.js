@@ -34,7 +34,16 @@ function addElement(value) {
 // function to check LocalStorage
 
 function checkLocalS() {
+    if(localStorage.length == 0) {
+        return false;
+    } 
+    else {
+        Object.keys(localStorage).forEach((key) => {
+            console.log(localStorage.getItem(key));
+        });
+    }
     
+
 }
 
 
