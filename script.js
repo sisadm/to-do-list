@@ -10,6 +10,8 @@ const toDoArray = [
     'Get a Haircut',
 ]
 
+let randomNumArray = [];
+
 
 const listDiv = document.querySelector('.list');
 const listUl = document.querySelector('ul');
