@@ -36,8 +36,8 @@ function addElement(value, addClass) {
 
     let ul = document.getElementsByTagName('ul')[0];
     let li = document.createElement('li');
-    if (addClass == 'hide') {
-        return li.classList.add('hide');
+    if (addClass !== null) {
+        return li.classList.add(addClass);
     }
     li.innerHTML = `
         <span class="liDiv notchecked">${value}</span> 
@@ -76,7 +76,7 @@ addItemButton.addEventListener('click', () => {
 
     if (inputValue != "") {
         
-        addElement(inputValue);
+        addElement(inputValue, null);
         addItemInput.value = '';
 
     } else {
