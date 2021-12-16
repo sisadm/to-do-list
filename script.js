@@ -1,3 +1,16 @@
+const toDoArray = [
+    'Get Groceries',
+    'Call Mum',
+    'Get Dentist Appointment',
+    'Pay Electricity Bill',
+    'Meet with Ed',
+    'Clear Email',
+    'Visit Uncle', 
+    'Go To Paris',
+    'Get a Haircut',
+]
+
+
 const listDiv = document.querySelector('.list');
 const listUl = document.querySelector('ul');
 const addItemInput = document.querySelector('input.addItemInput');
