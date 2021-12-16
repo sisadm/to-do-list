@@ -61,9 +61,15 @@ function checkLocalS() {
             console.log(localStorage.getItem(key));
         });
     }
-    
-
 }
+
+
+// random number generator 
+
+function randomNumb() {
+    return Math.floor(Math.random() * toDoArray.length);
+}
+
 
 
 // add item
