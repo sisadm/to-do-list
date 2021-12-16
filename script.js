@@ -31,10 +31,14 @@ function hide() {
 
 // function add Li to Ul
 
-function addElement(value) {
+function addElement(value, addClass) {
     
+
     let ul = document.getElementsByTagName('ul')[0];
     let li = document.createElement('li');
+    if (addClass == 'hide') {
+        return li.classList.add('hide');
+    }
     li.innerHTML = `
         <span class="liDiv notchecked">${value}</span> 
         <button class="delete">Delete</button> 
