@@ -71,6 +71,17 @@ function randomNumb() {
 }
 
 
+// choose random numbers 
+
+function randomToDo(number) {
+    console.log(number);
+    if(randomNumArray.includes(number)) {
+        randomToDo(randomNumb());
+    } else {
+        randomNumArray.push(number);
+    }
+}
+
 
 // add item
 addItemButton.addEventListener('click', () => {
