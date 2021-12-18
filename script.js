@@ -155,6 +155,6 @@ window.onload = () => {
     if(localStorage.length == 0) {
         console.log('nincs semmi benne')
     } else {
-        console.log('van benne');
+        
     }
 }
