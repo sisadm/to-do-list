@@ -35,8 +35,6 @@ function hide() {
 
 function addElement(value, addClass) {
     
-
-    let ul = document.querySelector('ul');
     let li = document.createElement('li');
     if (addClass !== null) {
         return li.classList.add(addClass);
@@ -47,7 +45,7 @@ function addElement(value, addClass) {
         <button class="up">&and;</button>
         <button class="down">&or;</button>
         `;
-    ul.appendChild(li);
+    listUl.appendChild(li);
 }
 
 // function to check LocalStorage
