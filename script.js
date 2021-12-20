@@ -153,7 +153,9 @@ listUl.addEventListener('click', (event) => {
 
 window.onload = () => {
     if(localStorage.length == 0) {
-        console.log('nincs semmi benne')
+        for(i = 0; i < 4; i++) {
+            addElement();
+        }
     } else {
         console.log('van benne');
     }
