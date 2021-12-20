@@ -37,7 +37,7 @@ function addElement(value, addClass) {
     
     let li = document.createElement('li');
     if (addClass != null) {
-        return li.classList.add(addClass);
+        li.classList.add(addClass);
     }
     li.innerHTML = `
         <span class="liDiv notchecked">${value}</span> 
