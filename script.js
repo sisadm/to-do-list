@@ -36,7 +36,7 @@ function hide() {
 function addElement(value, addClass) {
     
     let li = document.createElement('li');
-    if (addClass !== null) {
+    if (addClass != null) {
         return li.classList.add(addClass);
     }
     li.innerHTML = `
@@ -87,7 +87,7 @@ addItemButton.addEventListener('click', () => {
     let = inputValue = addItemInput.value;
 
     
-    if(hideLiElements[0].style.display != 'none' || !hideLiElements[0]) {
+    if(!hideLiElements[0] || hideLiElements[0].style.display != 'none') {
         hide();
     }
 
