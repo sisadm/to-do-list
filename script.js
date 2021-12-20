@@ -36,7 +36,7 @@ function hide() {
 function addElement(value, addClass) {
     
 
-    let ul = document.getElementsByTagName('ul')[0];
+    let ul = document.querySelector('ul');
     let li = document.createElement('li');
     if (addClass !== null) {
         return li.classList.add(addClass);
@@ -154,7 +154,9 @@ listUl.addEventListener('click', (event) => {
 window.onload = () => {
     if(localStorage.length == 0) {
         for(i = 0; i < 4; i++) {
-            addElement();
+            let number = randomNumb();
+            console.log(toDoArray[number]);
+            addElement(toDoArray[number], 'hide');
         }
     } else {
         console.log('van benne');
