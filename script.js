@@ -69,6 +69,9 @@ function randomNumb() {
 }
 
 
+// random quote add to array
+
+
 // choose random numbers 
 
 function randomToDo(number) {
