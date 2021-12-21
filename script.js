@@ -71,6 +71,11 @@ function randomNumb() {
 
 // random quote add to array
 
+function randomArrayFiller() {
+    if() {
+        
+    }
+}
 
 // choose random numbers 
 
