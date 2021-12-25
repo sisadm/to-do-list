@@ -72,9 +72,12 @@ function randomNumb() {
 // random quote add to array
 
 function randomArrayFiller() {
-    
-    
-    
+    let number = randomNumb();
+    if(!randomNumArray.contains(number)) {
+        randomNumArray.push(number);
+    } else {
+        randomArrayFiller();
+    }
 }
 
 // choose random numbers 
