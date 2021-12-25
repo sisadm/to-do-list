@@ -73,13 +73,11 @@ function randomNumb() {
 
 function randomArrayFiller() {
     let number = randomNumb();
-    let i = 0;
     do {
-        if(!randomNumArray.contains(number)) {
+        if(!randomNumArray.includes(number)) {
             randomNumArray.push(number);
         }
-        i++
-    } while(i < 5);
+    } while(randomNumArray.length == 5);
     
 }
 
@@ -164,6 +162,7 @@ listUl.addEventListener('click', (event) => {
 // page load function
 
 window.onload = () => {
+    randomArrayFiller();
     if(localStorage.length == 0) {
         for(i = 0; i < 4; i++) {
             let number = randomNumb();
