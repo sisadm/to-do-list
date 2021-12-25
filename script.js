@@ -73,11 +73,14 @@ function randomNumb() {
 
 function randomArrayFiller() {
     let number = randomNumb();
-    if(!randomNumArray.contains(number)) {
-        randomNumArray.push(number);
-    } else {
-        randomArrayFiller();
-    }
+    let i = 0;
+    do {
+        if(!randomNumArray.contains(number)) {
+            randomNumArray.push(number);
+        }
+        i++
+    } while(i < 5);
+    
 }
 
 // choose random numbers 
