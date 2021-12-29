@@ -166,9 +166,8 @@ listUl.addEventListener('click', (event) => {
 window.onload = () => {
     randomArrayFiller();
     if(localStorage.length == 0) {
-        for(i = 0; i < 4; i++) {
-            let number = randomNumb();
-            addElement(toDoArray[number], 'hide');
+        for(const e of randomNumArray) {
+            addElement(toDoArray[e], 'hide');
         }
     } else {
         console.log('van benne');
