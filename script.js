@@ -73,10 +73,14 @@ function randomNumb() {
 
 function randomArrayFiller() {
     
-    for(let i = 0; i < 4; i++){
+    for(let i = 0; randomNumArray.length < 4; i++){
         let number = randomNumb();
-        
+        if(!randomNumArray.includes(number)) {
+            randomNumArray.push(number);
+        }
+        console.log(number);
     };
+    console.log(randomNumArray);
 }
 
 // choose random numbers 
@@ -164,7 +168,6 @@ window.onload = () => {
     if(localStorage.length == 0) {
         for(i = 0; i < 4; i++) {
             let number = randomNumb();
-            console.log(toDoArray[number]);
             addElement(toDoArray[number], 'hide');
         }
     } else {
