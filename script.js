@@ -72,13 +72,11 @@ function randomNumb() {
 // random quote add to array
 
 function randomArrayFiller() {
-    let number = randomNumb();
-    do {
-        if(!randomNumArray.includes(number)) {
-            randomNumArray.push(number);
-        }
-    } while(randomNumArray.length == 5);
     
+    for(let i = 0; i < 4; i++){
+        let number = randomNumb();
+        
+    };
 }
 
 // choose random numbers 
