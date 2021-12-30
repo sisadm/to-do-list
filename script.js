@@ -117,7 +117,10 @@ addItemButton.addEventListener('click', () => {
 // save button 
 
 saveButton.addEventListener('click', () => {
+    
+    if(){
 
+    }
 });
 
 
