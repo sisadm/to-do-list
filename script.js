@@ -19,14 +19,13 @@ const addItemInput = document.querySelector('input.addItemInput');
 const addItemButton = document.querySelector('button.addItemButton');
 const saveButton = document.querySelector('.saveButton');
 const listItem = document.getElementsByTagName('li');
-const hideLiElements;
 
 
 
 // function to hide .hide class LI
 
 function hide() {
-    // const hideLiElements = document.querySelectorAll('.hide');
+    const hideLiElements = document.querySelectorAll('.hide');
     for(let i = 0; i < hideLiElements.length; i++){
         hideLiElements[i].style.display = 'none';
     }
@@ -118,8 +117,9 @@ addItemButton.addEventListener('click', () => {
 // save button 
 
 saveButton.addEventListener('click', () => {
-    
-    if(){
+    const hideLiElements = document.querySelectorAll('.hide');
+
+    if(!hideLiElements){
 
     }
 });
@@ -172,7 +172,9 @@ window.onload = () => {
             addElement(toDoArray[e], 'hide');
         }
     } else {
-        console.log('van benne');
+        for(let i = 1; i <= localStorage.length; i++){
+            
+            addElement(localStorage.getItem(i), null);
+        };
     }
-    return hideLiElements = document.querySelectorAll('.hide');
 }
