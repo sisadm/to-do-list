@@ -19,13 +19,13 @@ const addItemInput = document.querySelector('input.addItemInput');
 const addItemButton = document.querySelector('button.addItemButton');
 const saveButton = document.querySelector('.saveButton');
 const listItem = document.getElementsByTagName('li');
-const hideLiElements = document.querySelectorAll('.hide');
 
 
 
 // function to hide .hide class LI
 
 function hide() {
+    const hideLiElements = document.querySelectorAll('.hide');
     for(let i = 0; i < hideLiElements.length; i++){
         hideLiElements[i].style.display = 'none';
     }
@@ -78,9 +78,7 @@ function randomArrayFiller() {
         if(!randomNumArray.includes(number)) {
             randomNumArray.push(number);
         }
-        console.log(number);
     };
-    console.log(randomNumArray);
 }
 
 // choose random numbers 
@@ -97,7 +95,7 @@ function randomToDo(number) {
 
 // add item
 addItemButton.addEventListener('click', () => {
-
+    const hideLiElements = document.querySelectorAll('.hide');
     let = inputValue = addItemInput.value;
 
     
