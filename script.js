@@ -19,13 +19,14 @@ const addItemInput = document.querySelector('input.addItemInput');
 const addItemButton = document.querySelector('button.addItemButton');
 const saveButton = document.querySelector('.saveButton');
 const listItem = document.getElementsByTagName('li');
+const hideLiElements;
 
 
 
 // function to hide .hide class LI
 
 function hide() {
-    const hideLiElements = document.querySelectorAll('.hide');
+    // const hideLiElements = document.querySelectorAll('.hide');
     for(let i = 0; i < hideLiElements.length; i++){
         hideLiElements[i].style.display = 'none';
     }
@@ -173,4 +174,5 @@ window.onload = () => {
     } else {
         console.log('van benne');
     }
+    return hideLiElements = document.querySelectorAll('.hide');
 }
