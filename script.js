@@ -117,7 +117,7 @@ addItemButton.addEventListener('click', () => {
 // save button 
 
 saveButton.addEventListener('click', () => {
-    const hideLiElements = document.querySelectorAll('.hide');
+    const li = document.querySelectorAll('li');
 
     if(!hideLiElements){
 
