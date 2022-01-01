@@ -117,12 +117,14 @@ addItemButton.addEventListener('click', () => {
 
 saveButton.addEventListener('click', () => {
     const li = document.querySelectorAll('li');
-    let liDiv = document.querySelectorAll('.liDiv');
-
+    const liDiv = document.querySelectorAll('.liDiv');
+    const hideLi = document.querySelectorAll('.hide');
+    console.log(hideLi.NodeList);
     //if there is no Li element at all we clear the localStorage
     if(li.length == 0){
         window.localStorage.clear();
     }
+    
     else {
         for(let i = 1; i < li.length; i++){
             window.localStorage.setItem(i, liDiv[i].innerHTML);
