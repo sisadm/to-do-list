@@ -119,8 +119,8 @@ addItemButton.addEventListener('click', () => {
 saveButton.addEventListener('click', () => {
     const li = document.querySelectorAll('li');
 
-    if(!hideLiElements){
-
+    if(!li){
+        localStorage.clear();
     }
 });
 
