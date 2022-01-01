@@ -104,7 +104,6 @@ addItemButton.addEventListener('click', () => {
     }
 
     if (inputValue != "") {
-        
         addElement(inputValue, null);
         addItemInput.value = '';
 
@@ -125,9 +124,9 @@ saveButton.addEventListener('click', () => {
         window.localStorage.clear();
     }
     else {
-        for(let i = 0; i < li.length; i++){
+        for(let i = 1; i < li.length; i++){
             window.localStorage.setItem(i, liDiv[i].innerHTML);
-            console.log(window.localStorage.setItem(i, liDiv[i].innerHTML))
+    
         }
     }
 
