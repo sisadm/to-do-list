@@ -118,9 +118,9 @@ addItemButton.addEventListener('click', () => {
 
 saveButton.addEventListener('click', () => {
     const li = document.querySelectorAll('li');
-
-    if(!li){
-        localStorage.clear();
+    console.log(li);
+    if(li.length == 0){
+        window.localStorage.clear();
     }
 });
 
