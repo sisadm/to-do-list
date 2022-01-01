@@ -123,6 +123,14 @@ saveButton.addEventListener('click', () => {
     if(li.length == 0){
         window.localStorage.clear();
     }
+    else {
+        for(let i = 0; i < li.length; i++){
+            
+        }
+    }
+
+    
+
 });
 
 
