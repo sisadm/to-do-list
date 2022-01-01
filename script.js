@@ -118,7 +118,8 @@ addItemButton.addEventListener('click', () => {
 
 saveButton.addEventListener('click', () => {
     const li = document.querySelectorAll('li');
-    console.log(li);
+
+    //if there is no Li element at all we clear the localStorage
     if(li.length == 0){
         window.localStorage.clear();
     }
