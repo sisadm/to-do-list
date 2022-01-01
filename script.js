@@ -118,7 +118,7 @@ addItemButton.addEventListener('click', () => {
 
 saveButton.addEventListener('click', () => {
     const li = document.querySelectorAll('li');
-    let liDiv = li.querySelectorAll('.liDiv');
+    let liDiv = document.querySelectorAll('.liDiv');
 
     //if there is no Li element at all we clear the localStorage
     if(li.length == 0){
@@ -126,7 +126,8 @@ saveButton.addEventListener('click', () => {
     }
     else {
         for(let i = 0; i < li.length; i++){
-            window.localStorage.setItem(i, li[i].innerHTML)
+            window.localStorage.setItem(i, liDiv[i].innerHTML);
+            console.log(window.localStorage.setItem(i, liDiv[i].innerHTML))
         }
     }
 
