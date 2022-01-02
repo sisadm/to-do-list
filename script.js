@@ -119,17 +119,16 @@ saveButton.addEventListener('click', () => {
     const li = document.querySelectorAll('li');
     const liDiv = document.querySelectorAll('.liDiv');
     const hideLi = document.querySelectorAll('.hide');
-    console.log(hideLi.NodeList);
+    console.log(hideLi);
     //if there is no Li element at all we clear the localStorage
     if(li.length == 0){
         window.localStorage.clear();
-    }
-    
-    else {
+    } else if(hideLi.length == 0 && li.length > 0) {
         for(let i = 1; i < li.length; i++){
-            window.localStorage.setItem(i, liDiv[i].innerHTML);
-    
+            window.localStorage.setItem(i, liDiv[i-1].innerHTML);
         }
+    } else {
+        window.localStorage.clear();
     }
 
     
