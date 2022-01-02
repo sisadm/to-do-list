@@ -22,12 +22,12 @@ const listItem = document.getElementsByTagName('li');
 
 
 
-// function to hide .hide class LI
+// function to remove .hide class LI
 
-function hide() {
+function removeHideLi() {
     const hideLiElements = document.querySelectorAll('.hide');
     for(let i = 0; i < hideLiElements.length; i++){
-        hideLiElements[i].style.display = 'none';
+        hideLiElements[i].remove();
     }
 }
 
@@ -98,18 +98,21 @@ addItemButton.addEventListener('click', () => {
     const hideLiElements = document.querySelectorAll('.hide');
     let = inputValue = addItemInput.value;
 
-    
-    if(!hideLiElements[0] || hideLiElements[0].style.display != 'none') {
-        hide();
-    }
+    if(inputValue == '') {
+        return alert("Please fill the input if you want to add something to list!");
+    };
 
     if (inputValue != "") {
         addElement(inputValue, null);
         addItemInput.value = '';
+        removeHideLi();
+    } 
 
-    } else {
-        alert("Please fill the input if you want to add something to list!");
-    };
+    if(!hideLiElements[0] || hideLiElements[0].style.display != 'none') {
+        removeHideLi();
+    }
+
+    
     
 })
 
