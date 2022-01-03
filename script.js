@@ -127,8 +127,8 @@ saveButton.addEventListener('click', () => {
     if(li.length == 0){
         window.localStorage.clear();
     } else if(hideLi.length == 0 && li.length > 0) {
-        for(let i = 1; i < li.length; i++){
-            window.localStorage.setItem(i, liDiv[i-1].innerHTML);
+        for(let i = 0; i < li.length; i++){
+            window.localStorage.setItem(i, liDiv[i].innerHTML);
         }
     } else {
         window.localStorage.clear();
@@ -186,7 +186,7 @@ window.onload = () => {
             addElement(toDoArray[e], 'hide');
         }
     } else {
-        for(let i = 1; i <= localStorage.length; i++){
+        for(let i = 0; i <= localStorage.length; i++){
             addElement(localStorage.getItem(i), null);
         };
     }
