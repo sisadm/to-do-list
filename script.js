@@ -46,6 +46,7 @@ function addElement(value, addClass) {
         <button class="down">&or;</button>
         `;
     listUl.appendChild(li);
+    console.log(li);
 }
 
 // function to check LocalStorage
@@ -186,7 +187,7 @@ window.onload = () => {
             addElement(toDoArray[e], 'hide');
         }
     } else {
-        for(let i = 0; i <= localStorage.length; i++){
+        for(let i = 0; i <= localStorage.length - 1; i++){
             addElement(localStorage.getItem(i), null);
         };
     }
