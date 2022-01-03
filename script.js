@@ -46,7 +46,6 @@ function addElement(value, addClass) {
         <button class="down">&or;</button>
         `;
     listUl.appendChild(li);
-    console.log(li);
 }
 
 // function to check LocalStorage
@@ -94,7 +93,7 @@ function randomToDo(number) {
 }
 
 
-// add item
+// add item event listener
 addItemButton.addEventListener('click', () => {
     const hideLiElements = document.querySelectorAll('.hide');
     let = inputValue = addItemInput.value;
