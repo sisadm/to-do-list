@@ -127,8 +127,11 @@ saveButton.addEventListener('click', () => {
         window.localStorage.clear();
     } else if(hideLi.length == 0 && li.length > 0) {
         for(let i = 0; i < li.length; i++){
+            console.log(liSpan[i].classList == ('.notchecked'));
             if(liSpan[i].classList.contains('.notchecked')) {
                 window.localStorage.setItem(i, liSpan[i].innerHTML);
+            } else{
+                window.localStorage.removeItem(i);
             }
             
         }
