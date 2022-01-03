@@ -122,12 +122,15 @@ saveButton.addEventListener('click', () => {
     const li = document.querySelectorAll('li');
     const liDiv = document.querySelectorAll('.liDiv');
     const hideLi = document.querySelectorAll('.hide');
-    console.log(hideLi);
+    
     //if there is no Li element at all we clear the localStorage
     if(li.length == 0){
         window.localStorage.clear();
     } else if(hideLi.length == 0 && li.length > 0) {
         for(let i = 0; i < li.length; i++){
+            if() {
+
+            }
             window.localStorage.setItem(i, liDiv[i].innerHTML);
         }
     } else {
