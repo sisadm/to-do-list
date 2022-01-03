@@ -40,7 +40,7 @@ function addElement(value, addClass) {
         li.classList.add(addClass);
     }
     li.innerHTML = `
-        <span class="liDiv notchecked">${value}</span> 
+        <span class="liSpan notchecked">${value}</span> 
         <button class="delete">Delete</button> 
         <button class="up">&and;</button>
         <button class="down">&or;</button>
@@ -120,7 +120,7 @@ addItemButton.addEventListener('click', () => {
 
 saveButton.addEventListener('click', () => {
     const li = document.querySelectorAll('li');
-    const liDiv = document.querySelectorAll('.liDiv');
+    const liSpan = document.querySelectorAll('.liSpan');
     const hideLi = document.querySelectorAll('.hide');
     
     //if there is no Li element at all we clear the localStorage
@@ -128,10 +128,8 @@ saveButton.addEventListener('click', () => {
         window.localStorage.clear();
     } else if(hideLi.length == 0 && li.length > 0) {
         for(let i = 0; i < li.length; i++){
-            if() {
-
-            }
-            window.localStorage.setItem(i, liDiv[i].innerHTML);
+            
+            window.localStorage.setItem(i, liSpan[i].innerHTML);
         }
     } else {
         window.localStorage.clear();
