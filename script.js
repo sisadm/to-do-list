@@ -193,7 +193,7 @@ window.onload = () => {
     } else {
         for(let i = 0; i <= localStorage.length - 1; i++){
             console.log(i)
-            if(localStorage.getItem(i) == null){
+            if(localStorage.getItem(i) == 'null'){
                 i++;
             } else {
                 addElement(localStorage.getItem(i), null);
