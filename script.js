@@ -192,7 +192,13 @@ window.onload = () => {
         }
     } else {
         for(let i = 0; i <= localStorage.length - 1; i++){
-            addElement(localStorage.getItem(i), null);
+            console.log(i)
+            if(localStorage.getItem(i) == null){
+                i++;
+            } else {
+                addElement(localStorage.getItem(i), null);
+            }
+            
         };
     }
 }
