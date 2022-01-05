@@ -122,25 +122,18 @@ saveButton.addEventListener('click', () => {
     const li = document.querySelectorAll('li');
     const liSpan = document.querySelectorAll('.liSpan');
     const hideLi = document.querySelectorAll('.hide');
-    //if there is no Li element at all we clear the localStorage
-    if(li.length == 0){
-        window.localStorage.clear();
-    } else if(hideLi.length == 0 && li.length > 0) {
+
+    window.localStorage.clear();
+
+    if(hideLi.length == 0 && li.length > 0) {
         for(let i = 0; i < li.length; i++){
             console.log(liSpan[i].classList.contains('notchecked'));
             if(liSpan[i].classList.contains('notchecked')) {
                 window.localStorage.setItem(i, liSpan[i].innerHTML);
-            } else{
-                window.localStorage.removeItem(i);
             }
-            
         }
-    } else {
-        window.localStorage.clear();
     }
-
     
-
 });
 
 
