@@ -128,14 +128,16 @@ saveButton.addEventListener('click', () => {
 
     if(hideLi.length == 0 && li.length > 0) {
 
-
+        // for loop list elements and push it to savedItemArr 
         for(let i = 0; i < li.length; i++){
             if(liSpan[i].classList.contains('notchecked')) {
                 savedItemArr.push(liSpan[i].innerHTML);
             }
         }
-        console.log(savedItemArr);
-        // window.localStorage.setItem(i, liSpan[i].innerHTML);
+        for(let i = 0; i < savedItemArr.length; i++) {
+            window.localStorage.setItem(i, savedItemArr[i]);
+        }
+        
     }
 
 });
