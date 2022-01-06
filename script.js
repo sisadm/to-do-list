@@ -122,6 +122,7 @@ saveButton.addEventListener('click', () => {
     const li = document.querySelectorAll('li');
     const liSpan = document.querySelectorAll('.liSpan');
     const hideLi = document.querySelectorAll('.hide');
+    let savedItemArr = [];
 
     window.localStorage.clear();
 
@@ -136,7 +137,7 @@ saveButton.addEventListener('click', () => {
 
 });
 
-
+ 
 
 
 // up & down & delete buttons
