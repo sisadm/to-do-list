@@ -126,14 +126,14 @@ saveButton.addEventListener('click', () => {
     window.localStorage.clear();
 
     if(hideLi.length == 0 && li.length > 0) {
-        for(let i = 0; i < li.length; i++){
+        for(let i = 1; i < li.length; i++){
             console.log(liSpan[i].classList.contains('notchecked'));
             if(liSpan[i].classList.contains('notchecked')) {
                 window.localStorage.setItem(i, liSpan[i].innerHTML);
             }
         }
     }
-    
+
 });
 
 
