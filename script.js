@@ -133,6 +133,8 @@ saveButton.addEventListener('click', () => {
             if(liSpan[i].classList.contains('notchecked')) {
                 savedItemArr.push(liSpan[i].innerHTML);
             }
+
+        // for loop savedItemArr and push each one into localStorage 
         }
         for(let i = 0; i < savedItemArr.length; i++) {
             window.localStorage.setItem(i, savedItemArr[i]);
