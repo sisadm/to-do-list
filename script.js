@@ -116,8 +116,9 @@ addItemButton.addEventListener('click', () => {
     
 })
 
-// save button 
+// Button Functions!!!
 
+// save button 
 saveButton.addEventListener('click', () => {
     const li = document.querySelectorAll('li');
     const liSpan = document.querySelectorAll('.liSpan');
@@ -143,9 +144,6 @@ saveButton.addEventListener('click', () => {
     }
 
 });
-
- 
-
 
 // up & down & delete buttons
 listUl.addEventListener('click', (event) => {
