@@ -90,8 +90,9 @@ function randomToDo(number) {
     } else {
         randomNumArray.push(number);
     }
-}
+};
 
+// Button Functions!!!
 
 // add item event listener
 addItemButton.addEventListener('click', () => {
@@ -110,13 +111,9 @@ addItemButton.addEventListener('click', () => {
 
     if(!hideLiElements[0] || hideLiElements[0].style.display != 'none') {
         removeHideLi();
-    }
+    }   
+});
 
-    
-    
-})
-
-// Button Functions!!!
 
 // save button 
 saveButton.addEventListener('click', () => {
