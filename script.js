@@ -63,33 +63,30 @@ function checkLocalS() {
 
 
 // random number generator 
-
 function randomNumb() {
     return Math.floor(Math.random() * toDoArray.length);
-}
+};
 
 
 // random quote add to array
-
 function randomArrayFiller() {
     
     for(let i = 0; randomNumArray.length < 4; i++){
         let number = randomNumb();
         if(!randomNumArray.includes(number)) {
             randomNumArray.push(number);
-        }
+        };
     };
-}
+};
 
 // choose random numbers 
-
 function randomToDo(number) {
     console.log(number);
     if(randomNumArray.includes(number)) {
         randomToDo(randomNumb());
     } else {
         randomNumArray.push(number);
-    }
+    };
 };
 
 // Button Functions!!!
@@ -178,7 +175,7 @@ listUl.addEventListener('click', (event) => {
 })
 
 
-// page load function
+// page load
 
 window.onload = () => {
     randomArrayFiller();
