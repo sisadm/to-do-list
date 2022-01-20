@@ -142,7 +142,7 @@ li button{
     border-color: #FF5A09;
     transform-origin: bottom left;
     transform: rotate(45deg);
-    
+    float: left;
     transition: all 0.5s ease-in-out;
 }
 
