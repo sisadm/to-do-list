@@ -185,7 +185,6 @@ window.onload = () => {
         }
     } else {
         for(let i = 0; i <= localStorage.length - 1; i++){
-            console.log(i)
             if(localStorage.getItem(i) == 'null'){
                 i++;
             } else {
